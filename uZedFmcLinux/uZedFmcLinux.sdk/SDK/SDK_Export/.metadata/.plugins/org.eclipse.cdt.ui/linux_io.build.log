@@ -1,7 +1,0 @@
-20:05:56 **** Clean-only build of configuration Debug for project linux_io ****
-make clean 
-rm -rf  ./src/linux_user_io.o  ./src/linux_user_io.d  linux_io.elf.size  linux_io.elf
- 
-
-20:05:56 Build Finished (took 74ms)
-

@@ -25,3 +25,13 @@ New setup, going to try to port the project to Vivado 2017 as soon as something 
 (bootloader) /home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.sdk/SDK/SDK_Export/FSBL/Debug/FSBL.elf
              /home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.sdk/SDK/SDK_Export/hw_platform_0/design_1_wrapper.bit
              /home/hunters/Vivado/Download/fmcCarrierCard/FMC-CC_Linux/sd_image/pre-built/u-boot.elf
+
+Now ported to Vivado/SDK 2018
+(bootloader) /home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.sdk/FSBL/Debug/FSBL.elf
+             /home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+             /home/hunters/Vivado/Download/fmcCarrierCard/FMC-CC_Linux/sd_image/pre-built/u-boot.elf
+
+The 2018.2 version of SDK targets a newer version of Linux so I'm using the older SDK to compile my test application.  I'll set that up 
+properly when I make a more legit application with a Makefile (CMake)  
+
+Right now the goal is to mess with the VHDL ... so I need to do a clean of Vivado and SDK then re-commit to git.

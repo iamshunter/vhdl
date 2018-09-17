@@ -1,3 +1,12 @@
+//Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+//--------------------------------------------------------------------------------
+//Tool Version: Vivado v.2018.2.1 (lin64) Build 2288692 Thu Jul 26 18:23:50 MDT 2018
+//Date        : Sun Sep 16 20:47:49 2018
+//Host        : USBCentOS running 64-bit CentOS Linux release 7.5.1804 (Core)
+//Command     : generate_target design_1_wrapper.bd
+//Design      : design_1_wrapper
+//Purpose     : IP block netlist
+//--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
 module design_1_wrapper
@@ -92,7 +101,7 @@ module design_1_wrapper
   wire [4:4]emio_user_tri_t_4;
   wire [5:5]emio_user_tri_t_5;
 
-design_1 design_1_i
+  design_1 design_1_i
        (.DDR_addr(DDR_addr),
         .DDR_ba(DDR_ba),
         .DDR_cas_n(DDR_cas_n),
@@ -117,32 +126,32 @@ design_1 design_1_i
         .emio_user_tri_i({emio_user_tri_i_5,emio_user_tri_i_4,emio_user_tri_i_3,emio_user_tri_i_2,emio_user_tri_i_1,emio_user_tri_i_0}),
         .emio_user_tri_o({emio_user_tri_o_5,emio_user_tri_o_4,emio_user_tri_o_3,emio_user_tri_o_2,emio_user_tri_o_1,emio_user_tri_o_0}),
         .emio_user_tri_t({emio_user_tri_t_5,emio_user_tri_t_4,emio_user_tri_t_3,emio_user_tri_t_2,emio_user_tri_t_1,emio_user_tri_t_0}));
-IOBUF emio_user_tri_iobuf_0
+  IOBUF emio_user_tri_iobuf_0
        (.I(emio_user_tri_o_0),
         .IO(emio_user_tri_io[0]),
         .O(emio_user_tri_i_0),
         .T(emio_user_tri_t_0));
-IOBUF emio_user_tri_iobuf_1
+  IOBUF emio_user_tri_iobuf_1
        (.I(emio_user_tri_o_1),
         .IO(emio_user_tri_io[1]),
         .O(emio_user_tri_i_1),
         .T(emio_user_tri_t_1));
-IOBUF emio_user_tri_iobuf_2
+  IOBUF emio_user_tri_iobuf_2
        (.I(emio_user_tri_o_2),
         .IO(emio_user_tri_io[2]),
         .O(emio_user_tri_i_2),
         .T(emio_user_tri_t_2));
-IOBUF emio_user_tri_iobuf_3
+  IOBUF emio_user_tri_iobuf_3
        (.I(emio_user_tri_o_3),
         .IO(emio_user_tri_io[3]),
         .O(emio_user_tri_i_3),
         .T(emio_user_tri_t_3));
-IOBUF emio_user_tri_iobuf_4
+  IOBUF emio_user_tri_iobuf_4
        (.I(emio_user_tri_o_4),
         .IO(emio_user_tri_io[4]),
         .O(emio_user_tri_i_4),
         .T(emio_user_tri_t_4));
-IOBUF emio_user_tri_iobuf_5
+  IOBUF emio_user_tri_iobuf_5
        (.I(emio_user_tri_o_5),
         .IO(emio_user_tri_io[5]),
         .O(emio_user_tri_i_5),

@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2013.4 (64-bit)
+# SW Build 353583 on Mon Dec  9 17:26:26 MST 2013
+# IP Build 208076 on Mon Dec  2 12:38:17 MST 2013
+# Start of session at: Sun Sep 16 20:25:58 2018
+# Process ID: 16549
+# Log file: /home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.runs/impl_1/design_1_wrapper.rdi
+# Journal file: /home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace
