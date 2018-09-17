@@ -1,0 +1,6 @@
+the_ROM_image:
+{
+	[bootloader]/home/hunters/Vivado/learn/uZedFmcLinux/uZedFmcLinux.sdk/SDK/SDK_Export/FSBL/Debug/FSBL.elf
+	/home/hunters/Vivado/learn/uZedFmcLinux/uZedFmcLinux.sdk/SDK/SDK_Export/hw_platform_0/design_1_wrapper.bit
+	/home/hunters/Vivado/Download/fmcCarrierCard/FMC-CC_Linux/sd_image/pre-built/u-boot.elf
+}

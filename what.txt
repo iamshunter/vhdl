@@ -1,0 +1,27 @@
+Making constraints file from the I/O Planning interface for Synthesized Design - 
+https://www.so-logic.net/documents/knowledge/tutorial/Basic_FPGA_Tutorial_VHDL/sec_design_implementation.html
+
+Block Diagram is where I/O is enabled, double click on the ARM.  Currently I have a block of GPIO that's all been made external together.
+
+How do I map a pin to a connector?  e.g. l16 ->PA Pmod pin1  It's on the MicroZedFMC Carrier Card Hardware User Guide Connections table 11.
+
+I have GPIO on L16 and L17 which go to JA Pmod pin 1 and 2.  Next 
+I put my clock output on Pin 3 which is G14
+
+I made boot.bin from SDK->CreateZynq Boot Image:
+(bootloader) ~/Vivado/learn/SDK_Workspace/zynq_fsbl_0/Debug/zynq_fsbl_0.elf
+             ~/Vivado/learn/MicroZed_FMC-CC_Linux_User_IO/MicroZed_FMC-CC_Linux_User_IO.sdk/SDK/SDK_Export/hw/design_1_wrapper.bit
+             ~/Vivado/Download/fmcCarrierCard/FMC-CC_Linux/sd_image/pre-built/u-boot.elf
+
+    Instructions are in:
+     /home/hunters/Vivado/Download/fmcCarrierCard/FMC-CC_Linux/doc/MicroZed_FMC-CC_Linux_User_IO_2013_3_01-Tutorial.pdf
+
+Not sure what's going on but some counter intervals don't show up on the scope.  Working on powers of 2 of the original 6126
+count 196032 works (just less than 2 msec)
+  1568256 works
+100368384 works
+
+New setup, going to try to port the project to Vivado 2017 as soon as something works...
+(bootloader) /home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.sdk/SDK/SDK_Export/FSBL/Debug/FSBL.elf
+             /home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.sdk/SDK/SDK_Export/hw_platform_0/design_1_wrapper.bit
+             /home/hunters/Vivado/Download/fmcCarrierCard/FMC-CC_Linux/sd_image/pre-built/u-boot.elf
