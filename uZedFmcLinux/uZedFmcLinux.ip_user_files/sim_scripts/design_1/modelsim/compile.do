@@ -10,6 +10,9 @@ vlib modelsim_lib/msim/axi_protocol_checker_v2_0_3
 vlib modelsim_lib/msim/axi_vip_v1_1_3
 vlib modelsim_lib/msim/processing_system7_vip_v1_0_5
 vlib modelsim_lib/msim/work
+vlib modelsim_lib/msim/fit_timer_v2_0_8
+vlib modelsim_lib/msim/lib_cdc_v1_0_2
+vlib modelsim_lib/msim/proc_sys_reset_v5_0_12
 
 vmap xilinx_vip modelsim_lib/msim/xilinx_vip
 vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib
@@ -20,6 +23,9 @@ vmap axi_protocol_checker_v2_0_3 modelsim_lib/msim/axi_protocol_checker_v2_0_3
 vmap axi_vip_v1_1_3 modelsim_lib/msim/axi_vip_v1_1_3
 vmap processing_system7_vip_v1_0_5 modelsim_lib/msim/processing_system7_vip_v1_0_5
 vmap work modelsim_lib/msim/work
+vmap fit_timer_v2_0_8 modelsim_lib/msim/fit_timer_v2_0_8
+vmap lib_cdc_v1_0_2 modelsim_lib/msim/lib_cdc_v1_0_2
+vmap proc_sys_reset_v5_0_12 modelsim_lib/msim/proc_sys_reset_v5_0_12
 
 vlog -work xilinx_vip -64 -incr -sv -L smartconnect_v1_0 -L axi_protocol_checker_v2_0_3 -L axi_vip_v1_1_3 -L processing_system7_vip_v1_0_5 -L xilinx_vip "+incdir+../../../../uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/5bb9/hdl/verilog" "+incdir+../../../../uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/70fd/hdl" "+incdir+/home/hunters/Xilinx/Vivado/2018.2/data/xilinx_vip/include" "+incdir+/home/hunters/Xilinx/Vivado/2018.2/data/xilinx_vip/include" \
 "/home/hunters/Xilinx/Vivado/2018.2/data/xilinx_vip/hdl/axi4stream_vip_axi4streampc.sv" \
@@ -63,6 +69,24 @@ vlog -work work -64 -incr "+incdir+../../../../uZedFmcLinux.srcs/sources_1/bd/de
 
 vlog -work xil_defaultlib -64 -incr "+incdir+../../../../uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/5bb9/hdl/verilog" "+incdir+../../../../uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/70fd/hdl" "+incdir+/home/hunters/Xilinx/Vivado/2018.2/data/xilinx_vip/include" "+incdir+../../../../uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/5bb9/hdl/verilog" "+incdir+../../../../uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/70fd/hdl" "+incdir+/home/hunters/Xilinx/Vivado/2018.2/data/xilinx_vip/include" \
 "../../../bd/design_1/sim/design_1.v" \
+
+vcom -work fit_timer_v2_0_8 -64 -93 \
+"../../../../uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/d59c/hdl/fit_timer_v2_0_vh_rfs.vhd" \
+
+vcom -work xil_defaultlib -64 -93 \
+"../../../bd/design_1/ip/design_1_fit_timer_0_0/sim/design_1_fit_timer_0_0.vhd" \
+
+vcom -work lib_cdc_v1_0_2 -64 -93 \
+"../../../../uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd" \
+
+vcom -work proc_sys_reset_v5_0_12 -64 -93 \
+"../../../../uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd" \
+
+vcom -work xil_defaultlib -64 -93 \
+"../../../bd/design_1/ip/design_1_rst_ps7_0_100M_0/sim/design_1_rst_ps7_0_100M_0.vhd" \
+
+vlog -work xil_defaultlib -64 -incr "+incdir+../../../../uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/5bb9/hdl/verilog" "+incdir+../../../../uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/70fd/hdl" "+incdir+/home/hunters/Xilinx/Vivado/2018.2/data/xilinx_vip/include" "+incdir+../../../../uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/5bb9/hdl/verilog" "+incdir+../../../../uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/70fd/hdl" "+incdir+/home/hunters/Xilinx/Vivado/2018.2/data/xilinx_vip/include" \
+"../../../bd/design_1/ip/design_1_IntToPulse_0_0/sim/design_1_IntToPulse_0_0.v" \
 
 vlog -work xil_defaultlib \
 "glbl.v"

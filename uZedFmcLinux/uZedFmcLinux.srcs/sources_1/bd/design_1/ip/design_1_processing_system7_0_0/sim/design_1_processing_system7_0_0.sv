@@ -56,9 +56,9 @@
       bit  ENET1_MDIO_I;
       bit  ENET1_EXT_INTIN;
       bit  [7 : 0] ENET1_GMII_RXD;
-      bit  [5 : 0] GPIO_I;
-      bit  [5 : 0] GPIO_O;
-      bit  [5 : 0] GPIO_T;
+      bit  [7 : 0] GPIO_I;
+      bit  [7 : 0] GPIO_O;
+      bit  [7 : 0] GPIO_T;
       bit  I2C0_SDA_I;
       bit  I2C0_SDA_O;
       bit  I2C0_SDA_T;
@@ -732,7 +732,7 @@
       parameter USE_TRACE_DATA_EDGE_DETECTOR = 0;
       parameter C_TRACE_PIPELINE_WIDTH = 8;
       parameter C_TRACE_BUFFER_CLOCK_DELAY = 12;
-      parameter C_EMIO_GPIO_WIDTH = 6;
+      parameter C_EMIO_GPIO_WIDTH = 8;
       parameter C_INCLUDE_ACP_TRANS_CHECK = 0;
       parameter C_USE_DEFAULT_ACP_USER_VAL = 0;
       parameter C_S_AXI_ACP_ARUSER_VAL = 31;
@@ -792,9 +792,9 @@
       output  ENET0_PTP_SYNC_FRAME_TX;
       output  ENET0_SOF_RX;
       output  ENET0_SOF_TX;
-      input  [5 : 0] GPIO_I;
-      output  [5 : 0] GPIO_O;
-      output  [5 : 0] GPIO_T;
+      input  [7 : 0] GPIO_I;
+      output  [7 : 0] GPIO_O;
+      output  [7 : 0] GPIO_T;
       output  TTC0_WAVE0_OUT;
       output  TTC0_WAVE1_OUT;
       output  TTC0_WAVE2_OUT;
@@ -837,8 +837,8 @@
       reg ENET0_PTP_SYNC_FRAME_TX;
       reg ENET0_SOF_RX;
       reg ENET0_SOF_TX;
-      reg [5 : 0] GPIO_O;
-      reg [5 : 0] GPIO_T;
+      reg [7 : 0] GPIO_O;
+      reg [7 : 0] GPIO_T;
       reg TTC0_WAVE0_OUT;
       reg TTC0_WAVE1_OUT;
       reg TTC0_WAVE2_OUT;

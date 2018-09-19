@@ -6,7 +6,7 @@ Block Diagram is where I/O is enabled, double click on the ARM.  Currently I hav
 How do I map a pin to a connector?  e.g. l16 ->PA Pmod pin1  It's on the MicroZedFMC Carrier Card Hardware User Guide Connections table 11.
 
 I have GPIO on L16 and L17 which go to JA Pmod pin 1 and 2.  Next 
-I put my clock output on Pin 3 which is G14
+I put my clock output on JA Pmod Pin 3 which is G14
 
 I made boot.bin from SDK->CreateZynq Boot Image:
 (bootloader) ~/Vivado/learn/SDK_Workspace/zynq_fsbl_0/Debug/zynq_fsbl_0.elf
@@ -27,11 +27,19 @@ New setup, going to try to port the project to Vivado 2017 as soon as something 
              /home/hunters/Vivado/Download/fmcCarrierCard/FMC-CC_Linux/sd_image/pre-built/u-boot.elf
 
 Now ported to Vivado/SDK 2018
+output file : /home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.sdk/sdCard
 (bootloader) /home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.sdk/FSBL/Debug/FSBL.elf
-             /home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+             /home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.runs/impl_1/design_1_wrapper.bit
              /home/hunters/Vivado/Download/fmcCarrierCard/FMC-CC_Linux/sd_image/pre-built/u-boot.elf
 
 The 2018.2 version of SDK targets a newer version of Linux so I'm using the older SDK to compile my test application.  I'll set that up 
 properly when I make a more legit application with a Makefile (CMake)  
 
 Right now the goal is to mess with the VHDL ... so I need to do a clean of Vivado and SDK then re-commit to git.
+
+I put interrupt output on JA Pmod Pin 3 which is G14
+Copy of that through my VHDL on Pin 4 which is J15
+
+
+I put a VHDL module in and I'm able to do a clock rate divider. Doing a commit.
+

@@ -1,4 +1,4 @@
-22:39:17 **** Clean-only build of project FSBL_bsp ****
+21:08:37 **** Clean-only build of project FSBL_bsp ****
 make -k clean 
 make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s clean 
 make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s clean 
@@ -21,5 +21,5 @@ make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s clean
 make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s clean 
 rm -f ps7_cortexa9_0/lib/libxil.a
 
-22:39:17 Build Finished (took 113ms)
+21:08:37 Build Finished (took 111ms)
 

@@ -52,3 +52,16 @@ set_property IOSTANDARD LVCMOS18 [get_ports {emio_user_tri_io[5]}]
 
 # Bank 34, Vcco = 1.8V
 #set_property IOSTANDARD LVCMOS18 [get_ports -filter { IOBANK == 34 } ]
+
+
+set_property PACKAGE_PIN L17 [get_ports {emio_user_tri_io[6]}]
+set_property PACKAGE_PIN L16 [get_ports {emio_user_tri_io[7]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {emio_user_tri_io[7]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {emio_user_tri_io[6]}]
+
+set_property IOSTANDARD LVCMOS18 [get_ports TimerOut]
+set_property PACKAGE_PIN G14 [get_ports TimerOut]
+
+set_property IOSTANDARD LVCMOS18 [get_ports PulseOut]
+set_property PACKAGE_PIN J15 [get_ports PulseOut]
+

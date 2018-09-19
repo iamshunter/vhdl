@@ -1,0 +1,708 @@
+#-----------------------------------------------------------
+# Vivado v2018.2.1 (64-bit)
+# SW Build 2288692 on Thu Jul 26 18:23:50 MDT 2018
+# IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
+# Start of session at: Tue Sep 18 20:58:03 2018
+# Process ID: 13596
+# Current directory: /home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.runs/synth_1
+# Command line: vivado -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+# Log file: /home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.runs/synth_1/design_1_wrapper.vds
+# Journal file: /home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/hunters/Xilinx/Vivado/2018.2/data/ip'.
+WARNING: [HDL 9-2994] overwriting previous definition of module design_1 [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/synth/design_1.v:13]
+Command: synth_design -top design_1_wrapper -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+CRITICAL WARNING: [filemgmt 20-1741] File 'design_1.v' is used by one or more modules, but with different contents, and may lead to unpredictable results:
+* design_1 (/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/hdl/design_1.v)
+* design_1 (/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/synth/design_1.v)
+Please reset and regenerate these modules to resolve the differences, or synthesize them independently.
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 14409 
+WARNING: [Synth 8-2490] overwriting previous definition of module design_1 [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/synth/design_1.v:13]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1423.379 ; gain = 59.805 ; free physical = 2380 ; free virtual = 8861
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'design_1' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1_IntToPulse_0_0' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ip/design_1_IntToPulse_0_0/synth/design_1_IntToPulse_0_0.v:58]
+INFO: [Synth 8-638] synthesizing module 'IntToPulse' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/imports/source/IntToPulse.vhd:12]
+WARNING: [Synth 8-614] signal 'outClock' is read in the process but is not in the sensitivity list [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/imports/source/IntToPulse.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'IntToPulse' (1#1) [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/imports/source/IntToPulse.vhd:12]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_IntToPulse_0_0' (2#1) [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ip/design_1_IntToPulse_0_0/synth/design_1_IntToPulse_0_0.v:58]
+INFO: [Synth 8-638] synthesizing module 'design_1_fit_timer_0_0' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ip/design_1_fit_timer_0_0/synth/design_1_fit_timer_0_0.vhd:67]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_NO_CLOCKS bound to: 100368384 - type: integer 
+	Parameter C_INACCURACY bound to: 0 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'FIT_timer' declared at '/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/d59c/hdl/fit_timer_v2_0_vh_rfs.vhd:399' bound to instance 'U0' of component 'fit_timer' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ip/design_1_fit_timer_0_0/synth/design_1_fit_timer_0_0.vhd:98]
+INFO: [Synth 8-638] synthesizing module 'FIT_timer' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/d59c/hdl/fit_timer_v2_0_vh_rfs.vhd:422]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_NO_CLOCKS bound to: 100368384 - type: integer 
+	Parameter C_INACCURACY bound to: 0 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1 - type: integer 
+INFO: [Synth 8-113] binding component instance 'MUXCY_L_I1' to cell 'MUXCY_L' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/d59c/hdl/fit_timer_v2_0_vh_rfs.vhd:760]
+INFO: [Synth 8-113] binding component instance 'XORCY_I1' to cell 'XORCY' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/d59c/hdl/fit_timer_v2_0_vh_rfs.vhd:768]
+INFO: [Synth 8-113] binding component instance 'MUXCY_L_I1' to cell 'MUXCY_L' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/d59c/hdl/fit_timer_v2_0_vh_rfs.vhd:760]
+INFO: [Synth 8-113] binding component instance 'XORCY_I1' to cell 'XORCY' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/d59c/hdl/fit_timer_v2_0_vh_rfs.vhd:768]
+INFO: [Synth 8-113] binding component instance 'MUXCY_L_I1' to cell 'MUXCY_L' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/d59c/hdl/fit_timer_v2_0_vh_rfs.vhd:760]
+INFO: [Synth 8-113] binding component instance 'XORCY_I1' to cell 'XORCY' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/d59c/hdl/fit_timer_v2_0_vh_rfs.vhd:768]
+INFO: [Synth 8-113] binding component instance 'MUXCY_L_I1' to cell 'MUXCY_L' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/d59c/hdl/fit_timer_v2_0_vh_rfs.vhd:760]
+INFO: [Synth 8-113] binding component instance 'XORCY_I1' to cell 'XORCY' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/d59c/hdl/fit_timer_v2_0_vh_rfs.vhd:768]
+INFO: [Synth 8-113] binding component instance 'MUXCY_L_I1' to cell 'MUXCY_L' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/d59c/hdl/fit_timer_v2_0_vh_rfs.vhd:760]
+INFO: [Synth 8-113] binding component instance 'XORCY_I1' to cell 'XORCY' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/d59c/hdl/fit_timer_v2_0_vh_rfs.vhd:768]
+INFO: [Synth 8-113] binding component instance 'MUXCY_L_I1' to cell 'MUXCY_L' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/d59c/hdl/fit_timer_v2_0_vh_rfs.vhd:760]
+INFO: [Synth 8-113] binding component instance 'XORCY_I1' to cell 'XORCY' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/d59c/hdl/fit_timer_v2_0_vh_rfs.vhd:768]
+INFO: [Synth 8-113] binding component instance 'MUXCY_L_I1' to cell 'MUXCY_L' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/d59c/hdl/fit_timer_v2_0_vh_rfs.vhd:760]
+INFO: [Synth 8-113] binding component instance 'XORCY_I1' to cell 'XORCY' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/d59c/hdl/fit_timer_v2_0_vh_rfs.vhd:768]
+INFO: [Synth 8-113] binding component instance 'MUXCY_L_I1' to cell 'MUXCY_L' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/d59c/hdl/fit_timer_v2_0_vh_rfs.vhd:760]
+INFO: [Synth 8-113] binding component instance 'XORCY_I1' to cell 'XORCY' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/d59c/hdl/fit_timer_v2_0_vh_rfs.vhd:768]
+INFO: [Synth 8-113] binding component instance 'MUXCY_L_I1' to cell 'MUXCY_L' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/d59c/hdl/fit_timer_v2_0_vh_rfs.vhd:760]
+INFO: [Synth 8-113] binding component instance 'XORCY_I1' to cell 'XORCY' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/d59c/hdl/fit_timer_v2_0_vh_rfs.vhd:768]
+INFO: [Synth 8-113] binding component instance 'MUXCY_L_I1' to cell 'MUXCY_L' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/d59c/hdl/fit_timer_v2_0_vh_rfs.vhd:760]
+INFO: [Synth 8-113] binding component instance 'XORCY_I1' to cell 'XORCY' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/d59c/hdl/fit_timer_v2_0_vh_rfs.vhd:768]
+INFO: [Synth 8-113] binding component instance 'MUXCY_L_I1' to cell 'MUXCY_L' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/d59c/hdl/fit_timer_v2_0_vh_rfs.vhd:760]
+INFO: [Synth 8-113] binding component instance 'XORCY_I1' to cell 'XORCY' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/d59c/hdl/fit_timer_v2_0_vh_rfs.vhd:768]
+INFO: [Synth 8-113] binding component instance 'MUXCY_L_I1' to cell 'MUXCY_L' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/d59c/hdl/fit_timer_v2_0_vh_rfs.vhd:760]
+INFO: [Synth 8-113] binding component instance 'XORCY_I1' to cell 'XORCY' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/d59c/hdl/fit_timer_v2_0_vh_rfs.vhd:768]
+INFO: [Synth 8-113] binding component instance 'MUXCY_L_I1' to cell 'MUXCY_L' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/d59c/hdl/fit_timer_v2_0_vh_rfs.vhd:760]
+INFO: [Synth 8-113] binding component instance 'XORCY_I1' to cell 'XORCY' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/d59c/hdl/fit_timer_v2_0_vh_rfs.vhd:768]
+INFO: [Synth 8-113] binding component instance 'MUXCY_L_I1' to cell 'MUXCY_L' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/d59c/hdl/fit_timer_v2_0_vh_rfs.vhd:760]
+INFO: [Synth 8-113] binding component instance 'XORCY_I1' to cell 'XORCY' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/d59c/hdl/fit_timer_v2_0_vh_rfs.vhd:768]
+INFO: [Synth 8-113] binding component instance 'MUXCY_L_I1' to cell 'MUXCY_L' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/d59c/hdl/fit_timer_v2_0_vh_rfs.vhd:760]
+INFO: [Synth 8-113] binding component instance 'XORCY_I1' to cell 'XORCY' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/d59c/hdl/fit_timer_v2_0_vh_rfs.vhd:768]
+INFO: [Synth 8-113] binding component instance 'MUXCY_L_I1' to cell 'MUXCY_L' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/d59c/hdl/fit_timer_v2_0_vh_rfs.vhd:760]
+INFO: [Synth 8-113] binding component instance 'XORCY_I1' to cell 'XORCY' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/d59c/hdl/fit_timer_v2_0_vh_rfs.vhd:768]
+INFO: [Synth 8-113] binding component instance 'MUXCY_L_I1' to cell 'MUXCY_L' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/d59c/hdl/fit_timer_v2_0_vh_rfs.vhd:760]
+INFO: [Synth 8-113] binding component instance 'XORCY_I1' to cell 'XORCY' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/d59c/hdl/fit_timer_v2_0_vh_rfs.vhd:768]
+INFO: [Synth 8-113] binding component instance 'MUXCY_L_I1' to cell 'MUXCY_L' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/d59c/hdl/fit_timer_v2_0_vh_rfs.vhd:760]
+INFO: [Synth 8-113] binding component instance 'XORCY_I1' to cell 'XORCY' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/d59c/hdl/fit_timer_v2_0_vh_rfs.vhd:768]
+INFO: [Synth 8-113] binding component instance 'MUXCY_L_I1' to cell 'MUXCY_L' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/d59c/hdl/fit_timer_v2_0_vh_rfs.vhd:760]
+INFO: [Synth 8-113] binding component instance 'XORCY_I1' to cell 'XORCY' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/d59c/hdl/fit_timer_v2_0_vh_rfs.vhd:768]
+INFO: [Synth 8-113] binding component instance 'MUXCY_L_I1' to cell 'MUXCY_L' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/d59c/hdl/fit_timer_v2_0_vh_rfs.vhd:760]
+INFO: [Synth 8-113] binding component instance 'XORCY_I1' to cell 'XORCY' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/d59c/hdl/fit_timer_v2_0_vh_rfs.vhd:768]
+INFO: [Synth 8-113] binding component instance 'MUXCY_L_I1' to cell 'MUXCY_L' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/d59c/hdl/fit_timer_v2_0_vh_rfs.vhd:760]
+INFO: [Synth 8-113] binding component instance 'XORCY_I1' to cell 'XORCY' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/d59c/hdl/fit_timer_v2_0_vh_rfs.vhd:768]
+INFO: [Synth 8-113] binding component instance 'MUXCY_L_I1' to cell 'MUXCY_L' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/d59c/hdl/fit_timer_v2_0_vh_rfs.vhd:760]
+INFO: [Synth 8-113] binding component instance 'XORCY_I1' to cell 'XORCY' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/d59c/hdl/fit_timer_v2_0_vh_rfs.vhd:768]
+INFO: [Synth 8-113] binding component instance 'MUXCY_L_I1' to cell 'MUXCY_L' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/d59c/hdl/fit_timer_v2_0_vh_rfs.vhd:760]
+INFO: [Synth 8-113] binding component instance 'XORCY_I1' to cell 'XORCY' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/d59c/hdl/fit_timer_v2_0_vh_rfs.vhd:768]
+INFO: [Synth 8-113] binding component instance 'MUXCY_L_I1' to cell 'MUXCY_L' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/d59c/hdl/fit_timer_v2_0_vh_rfs.vhd:760]
+INFO: [Synth 8-113] binding component instance 'XORCY_I1' to cell 'XORCY' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/d59c/hdl/fit_timer_v2_0_vh_rfs.vhd:768]
+INFO: [Synth 8-113] binding component instance 'MUXCY_L_I1' to cell 'MUXCY_L' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/d59c/hdl/fit_timer_v2_0_vh_rfs.vhd:760]
+INFO: [Synth 8-113] binding component instance 'XORCY_I1' to cell 'XORCY' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/d59c/hdl/fit_timer_v2_0_vh_rfs.vhd:768]
+INFO: [Synth 8-113] binding component instance 'MUXCY_L_I1' to cell 'MUXCY_L' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/d59c/hdl/fit_timer_v2_0_vh_rfs.vhd:760]
+INFO: [Synth 8-113] binding component instance 'XORCY_I1' to cell 'XORCY' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/d59c/hdl/fit_timer_v2_0_vh_rfs.vhd:768]
+INFO: [Synth 8-113] binding component instance 'MUXCY_L_I1' to cell 'MUXCY_L' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/d59c/hdl/fit_timer_v2_0_vh_rfs.vhd:760]
+INFO: [Synth 8-113] binding component instance 'XORCY_I1' to cell 'XORCY' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/d59c/hdl/fit_timer_v2_0_vh_rfs.vhd:768]
+INFO: [Synth 8-256] done synthesizing module 'FIT_timer' (3#1) [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/d59c/hdl/fit_timer_v2_0_vh_rfs.vhd:422]
+INFO: [Synth 8-256] done synthesizing module 'design_1_fit_timer_0_0' (4#1) [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ip/design_1_fit_timer_0_0/synth/design_1_fit_timer_0_0.vhd:67]
+INFO: [Synth 8-6157] synthesizing module 'design_1_processing_system7_0_0' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:60]
+INFO: [Synth 8-6157] synthesizing module 'processing_system7_v5_5_processing_system7' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:161]
+	Parameter C_USE_DEFAULT_ACP_USER_VAL bound to: 0 - type: integer 
+	Parameter C_S_AXI_ACP_ARUSER_VAL bound to: 31 - type: integer 
+	Parameter C_S_AXI_ACP_AWUSER_VAL bound to: 31 - type: integer 
+	Parameter C_M_AXI_GP0_THREAD_ID_WIDTH bound to: 12 - type: integer 
+	Parameter C_M_AXI_GP1_THREAD_ID_WIDTH bound to: 12 - type: integer 
+	Parameter C_M_AXI_GP0_ENABLE_STATIC_REMAP bound to: 0 - type: integer 
+	Parameter C_M_AXI_GP1_ENABLE_STATIC_REMAP bound to: 0 - type: integer 
+	Parameter C_M_AXI_GP0_ID_WIDTH bound to: 12 - type: integer 
+	Parameter C_M_AXI_GP1_ID_WIDTH bound to: 12 - type: integer 
+	Parameter C_S_AXI_GP0_ID_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_GP1_ID_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_HP0_ID_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_HP1_ID_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_HP2_ID_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_HP3_ID_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_ACP_ID_WIDTH bound to: 3 - type: integer 
+	Parameter C_S_AXI_HP0_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_S_AXI_HP1_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_S_AXI_HP2_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_S_AXI_HP3_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_INCLUDE_ACP_TRANS_CHECK bound to: 0 - type: integer 
+	Parameter C_NUM_F2P_INTR_INPUTS bound to: 1 - type: integer 
+	Parameter C_FCLK_CLK0_BUF bound to: TRUE - type: string 
+	Parameter C_FCLK_CLK1_BUF bound to: FALSE - type: string 
+	Parameter C_FCLK_CLK2_BUF bound to: FALSE - type: string 
+	Parameter C_FCLK_CLK3_BUF bound to: FALSE - type: string 
+	Parameter C_EMIO_GPIO_WIDTH bound to: 8 - type: integer 
+	Parameter C_INCLUDE_TRACE_BUFFER bound to: 0 - type: integer 
+	Parameter C_TRACE_BUFFER_FIFO_SIZE bound to: 128 - type: integer 
+	Parameter C_TRACE_BUFFER_CLOCK_DELAY bound to: 12 - type: integer 
+	Parameter USE_TRACE_DATA_EDGE_DETECTOR bound to: 0 - type: integer 
+	Parameter C_TRACE_PIPELINE_WIDTH bound to: 8 - type: integer 
+	Parameter C_PS7_SI_REV bound to: PRODUCTION - type: string 
+	Parameter C_EN_EMIO_ENET0 bound to: 0 - type: integer 
+	Parameter C_EN_EMIO_ENET1 bound to: 0 - type: integer 
+	Parameter C_EN_EMIO_TRACE bound to: 0 - type: integer 
+	Parameter C_DQ_WIDTH bound to: 32 - type: integer 
+	Parameter C_DQS_WIDTH bound to: 4 - type: integer 
+	Parameter C_DM_WIDTH bound to: 4 - type: integer 
+	Parameter C_MIO_PRIMITIVE bound to: 54 - type: integer 
+	Parameter C_PACKAGE_NAME bound to: clg400 - type: string 
+	Parameter C_IRQ_F2P_MODE bound to: DIRECT - type: string 
+	Parameter C_TRACE_INTERNAL_WIDTH bound to: 32 - type: integer 
+	Parameter C_EN_EMIO_PJTAG bound to: 0 - type: integer 
+	Parameter C_USE_AXI_NONSECURE bound to: 0 - type: integer 
+	Parameter C_USE_S_AXI_HP0 bound to: 0 - type: integer 
+	Parameter C_USE_S_AXI_HP1 bound to: 0 - type: integer 
+	Parameter C_USE_S_AXI_HP2 bound to: 0 - type: integer 
+	Parameter C_USE_S_AXI_HP3 bound to: 0 - type: integer 
+	Parameter C_USE_M_AXI_GP0 bound to: 0 - type: integer 
+	Parameter C_USE_M_AXI_GP1 bound to: 0 - type: integer 
+	Parameter C_USE_S_AXI_GP0 bound to: 0 - type: integer 
+	Parameter C_USE_S_AXI_GP1 bound to: 0 - type: integer 
+	Parameter C_USE_S_AXI_ACP bound to: 0 - type: integer 
+	Parameter C_GP0_EN_MODIFIABLE_TXN bound to: 0 - type: integer 
+	Parameter C_GP1_EN_MODIFIABLE_TXN bound to: 0 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1347]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1348]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [/home/hunters/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:609]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (5#1) [/home/hunters/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:609]
+INFO: [Synth 8-6157] synthesizing module 'BIBUF' [/home/hunters/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:270]
+INFO: [Synth 8-6155] done synthesizing module 'BIBUF' (6#1) [/home/hunters/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:270]
+INFO: [Synth 8-6157] synthesizing module 'PS7' [/home/hunters/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:40565]
+INFO: [Synth 8-6155] done synthesizing module 'PS7' (7#1) [/home/hunters/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:40565]
+INFO: [Synth 8-6155] done synthesizing module 'processing_system7_v5_5_processing_system7' (8#1) [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:161]
+WARNING: [Synth 8-350] instance 'inst' of module 'processing_system7_v5_5_processing_system7' requires 685 connections, but only 672 given [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:248]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_processing_system7_0_0' (9#1) [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:60]
+WARNING: [Synth 8-350] instance 'processing_system7_0' of module 'design_1_processing_system7_0_0' requires 42 connections, but only 27 given [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/synth/design_1.v:112]
+INFO: [Synth 8-638] synthesizing module 'design_1_rst_ps7_0_100M_0' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/synth/design_1_rst_ps7_0_100M_0.vhd:74]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at '/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1264' bound to instance 'U0' of component 'proc_sys_reset' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/synth/design_1_rst_ps7_0_100M_0.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+	Parameter INIT bound to: 1'b1 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1392]
+	Parameter INIT bound to: 1'b1 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1408]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1434]
+	Parameter INIT bound to: 1'b1 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1457]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1481]
+INFO: [Synth 8-638] synthesizing module 'lpf' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+INFO: [Synth 8-3491] module 'SRL16' declared at '/home/hunters/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:50695' bound to instance 'POR_SRL_I' of component 'SRL16' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:868]
+INFO: [Synth 8-6157] synthesizing module 'SRL16' [/home/hunters/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:50695]
+	Parameter INIT bound to: 16'b0000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'SRL16' (10#1) [/home/hunters/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:50695]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+	Parameter C_CDC_TYPE bound to: 1 - type: integer 
+	Parameter C_RESET_STATE bound to: 0 - type: integer 
+	Parameter C_SINGLE_BIT bound to: 1 - type: integer 
+	Parameter C_FLOP_INPUT bound to: 0 - type: integer 
+	Parameter C_VECTOR_WIDTH bound to: 2 - type: integer 
+	Parameter C_MTBF_STAGES bound to: 4 - type: integer 
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:514]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:545]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:554]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:564]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:574]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (11#1) [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'lpf' (12#1) [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-638] synthesizing module 'sequence_psr' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+	Parameter C_SIZE bound to: 6 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (13#1) [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (14#1) [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (15#1) [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+INFO: [Synth 8-256] done synthesizing module 'design_1_rst_ps7_0_100M_0' (16#1) [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/synth/design_1_rst_ps7_0_100M_0.vhd:74]
+WARNING: [Synth 8-350] instance 'rst_ps7_0_100M' of module 'design_1_rst_ps7_0_100M_0' requires 10 connections, but only 6 given [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/synth/design_1.v:140]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (17#1) [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [/home/hunters/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:22660]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (18#1) [/home/hunters/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:22660]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (19#1) [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_aclk
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_resetn
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[1]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[0]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port scndry_resetn
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET0_GMII_COL
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET0_GMII_CRS
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET0_GMII_RX_DV
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET0_GMII_RX_ER
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET0_GMII_RXD[7]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET0_GMII_RXD[6]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET0_GMII_RXD[5]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET0_GMII_RXD[4]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET0_GMII_RXD[3]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET0_GMII_RXD[2]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET0_GMII_RXD[1]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET0_GMII_RXD[0]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET1_GMII_COL
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET1_GMII_CRS
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET1_GMII_RX_DV
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET1_GMII_RX_ER
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET1_GMII_RXD[7]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET1_GMII_RXD[6]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET1_GMII_RXD[5]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET1_GMII_RXD[4]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET1_GMII_RXD[3]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET1_GMII_RXD[2]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET1_GMII_RXD[1]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET1_GMII_RXD[0]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port S_AXI_GP0_ARSIZE[2]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port S_AXI_GP0_AWSIZE[2]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port S_AXI_GP1_ARSIZE[2]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port S_AXI_GP1_AWSIZE[2]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port S_AXI_ACP_ARSIZE[2]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port S_AXI_ACP_AWSIZE[2]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port S_AXI_HP0_ARSIZE[2]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port S_AXI_HP0_AWSIZE[2]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port S_AXI_HP1_ARSIZE[2]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port S_AXI_HP1_AWSIZE[2]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port S_AXI_HP2_ARSIZE[2]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port S_AXI_HP2_AWSIZE[2]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port S_AXI_HP3_ARSIZE[2]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port S_AXI_HP3_AWSIZE[2]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port FCLK_CLKTRIG3_N
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port FCLK_CLKTRIG2_N
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port FCLK_CLKTRIG1_N
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port FCLK_CLKTRIG0_N
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port FTMD_TRACEIN_DATA[31]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port FTMD_TRACEIN_DATA[30]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port FTMD_TRACEIN_DATA[29]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port FTMD_TRACEIN_DATA[28]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port FTMD_TRACEIN_DATA[27]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port FTMD_TRACEIN_DATA[26]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port FTMD_TRACEIN_DATA[25]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port FTMD_TRACEIN_DATA[24]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port FTMD_TRACEIN_DATA[23]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port FTMD_TRACEIN_DATA[22]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port FTMD_TRACEIN_DATA[21]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port FTMD_TRACEIN_DATA[20]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port FTMD_TRACEIN_DATA[19]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port FTMD_TRACEIN_DATA[18]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port FTMD_TRACEIN_DATA[17]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port FTMD_TRACEIN_DATA[16]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port FTMD_TRACEIN_DATA[15]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port FTMD_TRACEIN_DATA[14]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port FTMD_TRACEIN_DATA[13]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port FTMD_TRACEIN_DATA[12]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port FTMD_TRACEIN_DATA[11]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port FTMD_TRACEIN_DATA[10]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port FTMD_TRACEIN_DATA[9]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port FTMD_TRACEIN_DATA[8]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port FTMD_TRACEIN_DATA[7]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port FTMD_TRACEIN_DATA[6]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port FTMD_TRACEIN_DATA[5]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port FTMD_TRACEIN_DATA[4]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port FTMD_TRACEIN_DATA[3]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port FTMD_TRACEIN_DATA[2]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port FTMD_TRACEIN_DATA[1]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port FTMD_TRACEIN_DATA[0]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port FTMD_TRACEIN_VALID
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port FTMD_TRACEIN_ATID[3]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port FTMD_TRACEIN_ATID[2]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port FTMD_TRACEIN_ATID[1]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port FTMD_TRACEIN_ATID[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1458.512 ; gain = 94.938 ; free physical = 2401 ; free virtual = 8882
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1458.512 ; gain = 94.938 ; free physical = 2404 ; free virtual = 8885
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1458.512 ; gain = 94.938 ; free physical = 2404 ; free virtual = 8885
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 75 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_i/processing_system7_0/inst'
+Finished Parsing XDC File [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_i/processing_system7_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_board.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_board.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
+Parsing XDC File [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
+Parsing XDC File [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/constrs_1/imports/microzed/microzed_fmc_carrier.xdc]
+Finished Parsing XDC File [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/constrs_1/imports/microzed/microzed_fmc_carrier.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/constrs_1/imports/microzed/microzed_fmc_carrier.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 48 instances were transformed.
+  FDR => FDRE: 12 instances
+  IOBUF => IOBUF (IBUF, OBUFT): 8 instances
+  MUXCY_L => MUXCY: 27 instances
+  SRL16 => SRL16E: 1 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1723.070 ; gain = 0.004 ; free physical = 2156 ; free virtual = 8637
+CRITICAL WARNING: [filemgmt 20-1741] File 'design_1.v' is used by one or more modules, but with different contents, and may lead to unpredictable results:
+* design_1 (/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/hdl/design_1.v)
+* design_1 (/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/synth/design_1.v)
+Please reset and regenerate these modules to resolve the differences, or synthesize them independently.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:51 . Memory (MB): peak = 1723.070 ; gain = 359.496 ; free physical = 2233 ; free virtual = 8715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:51 . Memory (MB): peak = 1723.070 ; gain = 359.496 ; free physical = 2234 ; free virtual = 8715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for design_1_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/processing_system7_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/fit_timer_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/rst_ps7_0_100M. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/IntToPulse_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/processing_system7_0/inst. (constraint file  /home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.runs/synth_1/dont_touch.xdc, line 22).
+Applied set_property DONT_TOUCH = true for design_1_i/rst_ps7_0_100M/U0. (constraint file  /home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.runs/synth_1/dont_touch.xdc, line 27).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:51 . Memory (MB): peak = 1723.070 ; gain = 359.496 ; free physical = 2235 ; free virtual = 8717
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'seq_cnt_en_reg' into 'from_sys_reg' [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:377]
+WARNING: [Synth 8-6014] Unused sequential element seq_cnt_en_reg was removed.  [/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:377]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:52 . Memory (MB): peak = 1723.070 ; gain = 359.496 ; free physical = 2227 ; free virtual = 8709
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               27 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                3 Bit    Registers := 3     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module IntToPulse 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module FIT_timer 
+Detailed RTL Component Info : 
++---Registers : 
+	               27 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module lpf 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module upcnt_n 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module sequence_psr 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 3     
+	                1 Bit    Registers := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET0_GMII_COL
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET0_GMII_CRS
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET0_GMII_RX_DV
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET0_GMII_RX_ER
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET0_GMII_RXD[7]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET0_GMII_RXD[6]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET0_GMII_RXD[5]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET0_GMII_RXD[4]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET0_GMII_RXD[3]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET0_GMII_RXD[2]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET0_GMII_RXD[1]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET0_GMII_RXD[0]
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET1_GMII_COL
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET1_GMII_CRS
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET1_GMII_RX_DV
+WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET1_GMII_RX_ER
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'design_1_i/rst_ps7_0_100M/U0/SEQ/pr_dec_reg[1]' (FD) to 'design_1_i/rst_ps7_0_100M/U0/SEQ/bsr_dec_reg[1]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/rst_ps7_0_100M/U0/SEQ/bsr_dec_reg[1]' (FD) to 'design_1_i/rst_ps7_0_100M/U0/SEQ/core_dec_reg[1]'
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module proc_sys_reset.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:52 . Memory (MB): peak = 1723.070 ; gain = 359.496 ; free physical = 2217 ; free virtual = 8701
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:01:05 . Memory (MB): peak = 1883.051 ; gain = 519.477 ; free physical = 1939 ; free virtual = 8423
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:01:05 . Memory (MB): peak = 1911.066 ; gain = 547.492 ; free physical = 1926 ; free virtual = 8409
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:01:06 . Memory (MB): peak = 1911.066 ; gain = 547.492 ; free physical = 1923 ; free virtual = 8407
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:01:08 . Memory (MB): peak = 1911.070 ; gain = 547.496 ; free physical = 1923 ; free virtual = 8407
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:01:08 . Memory (MB): peak = 1911.070 ; gain = 547.496 ; free physical = 1923 ; free virtual = 8407
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:01:08 . Memory (MB): peak = 1911.070 ; gain = 547.496 ; free physical = 1923 ; free virtual = 8407
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:01:08 . Memory (MB): peak = 1911.070 ; gain = 547.496 ; free physical = 1923 ; free virtual = 8407
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:01:08 . Memory (MB): peak = 1911.070 ; gain = 547.496 ; free physical = 1924 ; free virtual = 8408
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:01:08 . Memory (MB): peak = 1911.070 ; gain = 547.496 ; free physical = 1924 ; free virtual = 8408
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BIBUF   |   130|
+|2     |BUFG    |     1|
+|3     |CARRY4  |    12|
+|4     |LUT1    |   330|
+|5     |LUT2    |    41|
+|6     |LUT3    |     1|
+|7     |LUT4    |     6|
+|8     |LUT5    |     3|
+|9     |LUT6    |     1|
+|10    |MUXCY_L |    27|
+|11    |PS7     |     1|
+|12    |SRL16   |     1|
+|13    |XORCY   |    27|
+|14    |FDR     |     8|
+|15    |FDRE    |    64|
+|16    |FDSE    |    29|
+|17    |IOBUF   |     8|
+|18    |OBUF    |     2|
++------+--------+------+
+
+Report Instance Areas: 
++------+--------------------------------------+-------------------------------------------+------+
+|      |Instance                              |Module                                     |Cells |
++------+--------------------------------------+-------------------------------------------+------+
+|1     |top                                   |                                           |   692|
+|2     |  design_1_i                          |design_1                                   |   682|
+|3     |    IntToPulse_0                      |design_1_IntToPulse_0_0                    |    77|
+|4     |      inst                            |IntToPulse                                 |    77|
+|5     |    fit_timer_0                       |design_1_fit_timer_0_0                     |   111|
+|6     |      U0                              |FIT_timer                                  |   111|
+|7     |    processing_system7_0              |design_1_processing_system7_0_0            |   428|
+|8     |      inst                            |processing_system7_v5_5_processing_system7 |   428|
+|9     |    rst_ps7_0_100M                    |design_1_rst_ps7_0_100M_0                  |    66|
+|10    |      U0                              |proc_sys_reset                             |    66|
+|11    |        EXT_LPF                       |lpf                                        |    23|
+|12    |          \ACTIVE_LOW_AUX.ACT_LO_AUX  |cdc_sync                                   |     6|
+|13    |          \ACTIVE_LOW_EXT.ACT_LO_EXT  |cdc_sync_0                                 |     6|
+|14    |        SEQ                           |sequence_psr                               |    38|
+|15    |          SEQ_COUNTER                 |upcnt_n                                    |    13|
++------+--------------------------------------+-------------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:01:08 . Memory (MB): peak = 1911.070 ; gain = 547.496 ; free physical = 1924 ; free virtual = 8408
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 84 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:25 . Memory (MB): peak = 1911.070 ; gain = 282.938 ; free physical = 1980 ; free virtual = 8464
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:01:08 . Memory (MB): peak = 1911.074 ; gain = 547.496 ; free physical = 1980 ; free virtual = 8464
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 83 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 24 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 7 instances
+  FDR => FDRE: 8 instances
+  IOBUF => IOBUF (IBUF, OBUFT): 8 instances
+  SRL16 => SRL16E: 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+131 Infos, 111 Warnings, 2 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:01:09 . Memory (MB): peak = 1946.082 ; gain = 582.508 ; free physical = 2122 ; free virtual = 8606
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint '/home/hunters/Vivado/vhdl/uZedFmcLinux/uZedFmcLinux.runs/synth_1/design_1_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.07 . Memory (MB): peak = 1970.102 ; gain = 0.000 ; free physical = 2120 ; free virtual = 8603
+INFO: [Common 17-206] Exiting Vivado at Tue Sep 18 20:59:23 2018...

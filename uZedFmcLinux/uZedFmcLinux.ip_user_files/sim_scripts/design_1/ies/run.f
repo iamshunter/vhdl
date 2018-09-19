@@ -41,6 +41,24 @@
 -makelib ies_lib/xil_defaultlib \
   "../../../bd/design_1/sim/design_1.v" \
 -endlib
+-makelib ies_lib/fit_timer_v2_0_8 \
+  "../../../../uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/d59c/hdl/fit_timer_v2_0_vh_rfs.vhd" \
+-endlib
+-makelib ies_lib/xil_defaultlib \
+  "../../../bd/design_1/ip/design_1_fit_timer_0_0/sim/design_1_fit_timer_0_0.vhd" \
+-endlib
+-makelib ies_lib/lib_cdc_v1_0_2 \
+  "../../../../uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd" \
+-endlib
+-makelib ies_lib/proc_sys_reset_v5_0_12 \
+  "../../../../uZedFmcLinux.srcs/sources_1/bd/design_1/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd" \
+-endlib
+-makelib ies_lib/xil_defaultlib \
+  "../../../bd/design_1/ip/design_1_rst_ps7_0_100M_0/sim/design_1_rst_ps7_0_100M_0.vhd" \
+-endlib
+-makelib ies_lib/xil_defaultlib \
+  "../../../bd/design_1/ip/design_1_IntToPulse_0_0/sim/design_1_IntToPulse_0_0.v" \
+-endlib
 -makelib ies_lib/xil_defaultlib \
   glbl.v
 -endlib
